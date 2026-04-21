@@ -1,0 +1,142 @@
+body{
+background: linear-gradient(135deg,#4facfe,#00f2fe);
+min-height:100vh;
+transition:0.4s ease;
+font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar{
+background: linear-gradient(90deg,#0f172a,#1e3a8a) !important;
+}
+
+/* Main Cards */
+.card{
+border:none;
+border-radius:20px;
+box-shadow:0 12px 30px rgba(0,0,0,0.15);
+transition:0.3s;
+background: rgba(255,255,255,0.95);
+}
+
+.card:hover{
+transform: translateY(-4px);
+}
+
+/* Input */
+input.form-control{
+height:55px;
+border-radius:14px;
+border:2px solid #93c5fd;
+font-size:18px;
+}
+
+input.form-control:focus{
+box-shadow:0 0 0 0.2rem rgba(59,130,246,0.25);
+border-color:#2563eb;
+}
+
+/* Search Button */
+.btn-primary{
+background: linear-gradient(90deg,#2563eb,#06b6d4);
+border:none;
+height:52px;
+border-radius:14px;
+font-weight:600;
+font-size:18px;
+}
+
+.btn-primary:hover{
+background: linear-gradient(90deg,#1d4ed8,#0891b2);
+}
+
+/* Mode Button */
+#modeBtn{
+border-radius:14px;
+font-weight:600;
+height:48px;
+}
+
+/* History Items */
+#history li{
+cursor:pointer;
+border:none;
+margin-bottom:8px;
+border-radius:12px;
+background:#eff6ff;
+font-weight:500;
+transition:0.2s;
+}
+
+#history li:hover{
+background:#dbeafe;
+transform:translateX(4px);
+}
+
+/* Weather Card Text */
+#cityName{
+font-size:38px;
+color:#1d4ed8;
+}
+
+#temp{
+color:#0f172a;
+font-weight:700;
+}
+
+#condition{
+color:#475569;
+}
+
+#humidity{
+color:#0891b2;
+}
+
+/* Dark Mode */
+.dark-mode{
+background: linear-gradient(135deg,#0f172a,#111827) !important;
+color:white;
+}
+
+.dark-mode .card{
+background: rgba(30,41,59,0.95);
+color:white;
+}
+
+.dark-mode #cityName{
+color:#60a5fa;
+}
+
+.dark-mode #temp,
+.dark-mode #condition,
+.dark-mode #humidity{
+color:white;
+}
+
+.dark-mode .text-muted{
+color:#cbd5e1 !important;
+}
+
+.dark-mode input{
+background:#334155;
+color:white;
+border:2px solid #475569;
+}
+
+.dark-mode input::placeholder{
+color:#cbd5e1;
+}
+
+.dark-mode #history li{
+background:#334155;
+color:white;
+}
+
+.dark-mode #history li:hover{
+background:#475569;
+}
+
+.dark-mode #modeBtn{
+border-color:white;
+color:white;
+}
